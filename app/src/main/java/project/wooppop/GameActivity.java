@@ -58,11 +58,11 @@ public class GameActivity extends ActionBarActivity implements MediaPlayerContro
         seed = System.nanoTime();
         Collections.shuffle(songList, new Random(seed));
         ArrayList<String> songTitles = new ArrayList<String>();
-        String principal = songList.get(0).getTitle(); //+ " - " + songList.get(0).getArtist();
-        songTitles.add(songList.get(0).getTitle()); // + " - " + songList.get(0).getArtist());
-        songTitles.add(songList.get(1).getTitle()); // + " - " + songList.get(1).getArtist());
-        songTitles.add(songList.get(2).getTitle()); // + " - " + songList.get(2).getArtist());
-        songTitles.add(songList.get(3).getTitle()); // + " - " + songList.get(3).getArtist());
+        String principal = songList.get(0).getTitle() + " - " + songList.get(0).getArtist();
+        songTitles.add(songList.get(0).getTitle() + " - " + songList.get(0).getArtist());
+        songTitles.add(songList.get(1).getTitle() + " - " + songList.get(1).getArtist());
+        songTitles.add(songList.get(2).getTitle() + " - " + songList.get(2).getArtist());
+        songTitles.add(songList.get(3).getTitle() + " - " + songList.get(3).getArtist());
         seed = System.nanoTime();
         Collections.shuffle(songTitles, new Random(seed));
 
@@ -342,42 +342,80 @@ public class GameActivity extends ActionBarActivity implements MediaPlayerContro
     public void getSongList(int type) {
 
         if(type == 0){
-            songList.add(new Song(R.raw.chiquitita, "Chiquitita", "", 20000));
-            songList.add(new Song(R.raw.dancingqueen, "Dancing Queen", "", 20000));
-            songList.add(new Song(R.raw.fernando, "Fernando", "", 20000));
-            songList.add(new Song(R.raw.gimmegimmegimme, "Gimme Gimme Gimme", "", 20000));
+            songList.add(new Song(R.raw.smallaboutthatbass, "All About That Bass", "Megan Trainor", 20000));
+            songList.add(new Song(R.raw.smbangbang, "Bang Bang", "Jessie J, Ariana Grande, Nicki Minaj", 20000));
+            songList.add(new Song(R.raw.smbitchimmadonna, "Bitch I'm Madonna", "Madonna", 20000));
+            songList.add(new Song(R.raw.smblackwidow, "Black Widow", "Rita Ora, Iggy Azalea", 20000));
+            songList.add(new Song(R.raw.smbreakfree, "Break Free", "Ariana Grande, Zedd", 20000));
+            songList.add(new Song(R.raw.smchandelier, "Chandelier", "Sia", 20000));
+            songList.add(new Song(R.raw.smcoolkids, "Cool Kids", "Echosmith", 20000));
+            songList.add(new Song(R.raw.smflawless, "Flawless", "Beyoncé", 20000));
+            songList.add(new Song(R.raw.smheymama, "Hey Mama", "David Guetta, Nicki Minaj", 20000));
+            songList.add(new Song(R.raw.smiwantyoutoknow, "I Want You To Know", "Selena Gomez, Zedd", 20000));
+            songList.add(new Song(R.raw.smleanon, "Lean On", "Major Lazer, DJ Snake", 20000));
+            songList.add(new Song(R.raw.smlovemelikeyoudo, "Love Me Like You Do", "Ellie Goulding", 20000));
+            songList.add(new Song(R.raw.smstayhigh, "Habits (Stay High)", "Tove Lo", 20000));
+            songList.add(new Song(R.raw.smthemonster, "The Monster", "Rihanna, Eminem", 20000));
+            songList.add(new Song(R.raw.smthisishowwedo, "This Is How We Do", "Katy Perry", 20000));
+            songList.add(new Song(R.raw.smuptownfunk, "Uptown Funk", "Mark Ronson, Bruno Mars", 20000));
+            songList.add(new Song(R.raw.smwellbecomingback, "We'll Be Coming Back", "Calvin Harris, Example", 20000));
+            songList.add(new Song(R.raw.smwreckingball, "Wrecking Ball", "Miley Cyrus", 20000));
         } else if (type == 1){
-            songList.add(new Song(R.raw.happynewyear, "Happy New Year", "", 20000));
-            songList.add(new Song(R.raw.honeyhoney, "Honey, Honey", "", 20000));
-            songList.add(new Song(R.raw.idoidoido, "I Do, I Do, I Do, I Do, I Do", "", 20000));
-            songList.add(new Song(R.raw.ihaveadream, "I Have a Dream", "", 20000));
+            songList.add(new Song(R.raw.rvallaboutthatbass, "All About That Bass", "Megan Trainor", 20000));
+            songList.add(new Song(R.raw.rvbangbang, "Bang Bang", "Jessie J, Ariana Grande, Nicki Minaj", 20000));
+            songList.add(new Song(R.raw.rvbitchimmadonna, "Bitch I'm Madonna", "Madonna", 20000));
+            songList.add(new Song(R.raw.rvblackwidow, "Black Widow", "Rita Ora, Iggy Azalea", 20000));
+            songList.add(new Song(R.raw.rvbreakfree, "Break Free", "Ariana Grande, Zedd", 20000));
+            songList.add(new Song(R.raw.rvchandelier, "Chandelier", "Sia", 20000));
+            songList.add(new Song(R.raw.rvcoolkids, "Cool Kids", "Echosmith", 20000));
+            songList.add(new Song(R.raw.rvflawless, "Flawless", "Beyoncé", 20000));
+            songList.add(new Song(R.raw.rvheymama, "Hey Mama", "David Guetta, Nicki Minaj", 20000));
+            songList.add(new Song(R.raw.rviwantyoutoknow, "I Want You To Know", "Selena Gomez, Zedd", 20000));
+            songList.add(new Song(R.raw.rvleanon, "Lean On", "Major Lazer, DJ Snake", 20000));
+            songList.add(new Song(R.raw.rvlovemelikeyoudo, "Love Me Like You Do", "Ellie Goulding", 20000));
+            songList.add(new Song(R.raw.rvstayhigh, "Habits (Stay High)", "Tove Lo", 20000));
+            songList.add(new Song(R.raw.rvthemonster, "The Monster", "Rihanna, Eminem", 20000));
+            songList.add(new Song(R.raw.rvthisishowwedo, "This Is How We Do", "Katy Perry", 20000));
+            songList.add(new Song(R.raw.rvuptownfunk, "Uptown Funk", "Mark Ronson, Bruno Mars", 20000));
+            songList.add(new Song(R.raw.rvwellbecomingback, "We'll Be Coming Back", "Calvin Harris, Example", 20000));
+            //songList.add(new Song(R.raw.rv, "Wrecking Ball", "Miley Cyrus", 20000));
         } else {
-            songList.add(new Song(R.raw.layallyourloveonme, "Lay All Your Love On Me", "", 20000));
-            songList.add(new Song(R.raw.mammamia, "Mamma Mia", "", 20000));
-            songList.add(new Song(R.raw.moneymoneymoney, "Money, Money, Money", "", 20000));
-            songList.add(new Song(R.raw.nameofthegame, "Name of the Game", "", 20000));
+            songList.add(new Song(R.raw.rvallaboutthatbass, "All About That Bass (Reversed)", "Megan Trainor", 20000));
+            songList.add(new Song(R.raw.rvbangbang, "Bang Bang (Reversed)", "Jessie J, Ariana Grande, Nicki Minaj", 20000));
+            songList.add(new Song(R.raw.rvbitchimmadonna, "Bitch I'm Madonna (Reversed)", "Madonna", 20000));
+            songList.add(new Song(R.raw.rvblackwidow, "Black Widow (Reversed)", "Rita Ora, Iggy Azalea", 20000));
+            songList.add(new Song(R.raw.rvbreakfree, "Break Free (Reversed)", "Ariana Grande, Zedd", 20000));
+            songList.add(new Song(R.raw.rvchandelier, "Chandelier (Reversed)", "Sia", 20000));
+            songList.add(new Song(R.raw.rvcoolkids, "Cool Kids (Reversed)", "Echosmith", 20000));
+            songList.add(new Song(R.raw.rvflawless, "Flawless (Reversed)", "Beyoncé", 20000));
+            songList.add(new Song(R.raw.rvheymama, "Hey Mama (Reversed)", "David Guetta, Nicki Minaj", 20000));
+            songList.add(new Song(R.raw.rviwantyoutoknow, "I Want You To Know (Reversed)", "Selena Gomez, Zedd", 20000));
+            songList.add(new Song(R.raw.rvleanon, "Lean On (Reversed)", "Major Lazer, DJ Snake", 20000));
+            songList.add(new Song(R.raw.rvlovemelikeyoudo, "Love Me Like You Do (Reversed)", "Ellie Goulding", 20000));
+            songList.add(new Song(R.raw.rvstayhigh, "Habits (Stay High) (Reversed)", "Tove Lo", 20000));
+            songList.add(new Song(R.raw.rvthemonster, "The Monster (Reversed)", "Rihanna, Eminem", 20000));
+            songList.add(new Song(R.raw.rvthisishowwedo, "This Is How We Do (Reversed)", "Katy Perry", 20000));
+            songList.add(new Song(R.raw.rvuptownfunk, "Uptown Funk (Reversed)", "Mark Ronson, Bruno Mars", 20000));
+            songList.add(new Song(R.raw.rvwellbecomingback, "We'll Be Coming Back (Reversed)", "Calvin Harris, Example", 20000));
+            songList.add(new Song(R.raw.smallaboutthatbass, "All About That Bass (Slow Motion)", "Megan Trainor", 20000));
+            songList.add(new Song(R.raw.smbangbang, "Bang Bang (Slow Motion)", "Jessie J, Ariana Grande, Nicki Minaj", 20000));
+            songList.add(new Song(R.raw.smbitchimmadonna, "Bitch I'm Madonna (Slow Motion)", "Madonna", 20000));
+            songList.add(new Song(R.raw.smblackwidow, "Black Widow (Slow Motion)", "Rita Ora, Iggy Azalea", 20000));
+            songList.add(new Song(R.raw.smbreakfree, "Break Free (Slow Motion)", "Ariana Grande, Zedd", 20000));
+            songList.add(new Song(R.raw.smchandelier, "Chandelier (Slow Motion)", "Sia", 20000));
+            songList.add(new Song(R.raw.smcoolkids, "Cool Kids (Slow Motion)", "Echosmith", 20000));
+            songList.add(new Song(R.raw.smflawless, "Flawless (Slow Motion)", "Beyoncé", 20000));
+            songList.add(new Song(R.raw.smheymama, "Hey Mama (Slow Motion)", "David Guetta, Nicki Minaj", 20000));
+            songList.add(new Song(R.raw.smiwantyoutoknow, "I Want You To Know (Slow Motion)", "Selena Gomez, Zedd", 20000));
+            songList.add(new Song(R.raw.smleanon, "Lean On (Slow Motion)", "Major Lazer, DJ Snake", 20000));
+            songList.add(new Song(R.raw.smlovemelikeyoudo, "Love Me Like You Do (Slow Motion)", "Ellie Goulding", 20000));
+            songList.add(new Song(R.raw.smstayhigh, "Habits (Stay High) (Slow Motion)", "Tove Lo", 20000));
+            songList.add(new Song(R.raw.smthemonster, "The Monster (Slow Motion)", "Rihanna, Eminem", 20000));
+            songList.add(new Song(R.raw.smthisishowwedo, "This Is How We Do (Slow Motion)", "Katy Perry", 20000));
+            songList.add(new Song(R.raw.smuptownfunk, "Uptown Funk (Slow Motion)", "Mark Ronson, Bruno Mars", 20000));
+            songList.add(new Song(R.raw.smwellbecomingback, "We'll Be Coming Back (Slow Motion)", "Calvin Harris, Example", 20000));
+            songList.add(new Song(R.raw.smwreckingball, "Wrecking Ball (Slow Motion)", "Miley Cyrus", 20000));
         }
-        /*songList.add(new Song(R.raw.chiquitita, "Chiquitita", "", 20000));
-        songList.add(new Song(R.raw.dancingqueen, "Dancing Queen", "", 20000));
-        songList.add(new Song(R.raw.fernando, "Fernando", "", 20000));
-        songList.add(new Song(R.raw.gimmegimmegimme, "Gimme Gimme Gimme", "", 20000));
-        songList.add(new Song(R.raw.happynewyear, "Happy New Year", "", 20000));
-        songList.add(new Song(R.raw.honeyhoney, "Honey, Honey", "", 20000));
-        songList.add(new Song(R.raw.idoidoido, "I Do, I Do, I Do, I Do, I Do", "", 20000));
-        songList.add(new Song(R.raw.ihaveadream, "I Have a Dream", "", 20000));
-        songList.add(new Song(R.raw.layallyourloveonme, "Lay All Your Love On Me", "", 20000));
-        songList.add(new Song(R.raw.mammamia, "Mamma Mia", "", 20000));
-        songList.add(new Song(R.raw.moneymoneymoney, "Money, Money, Money", "", 20000));
-        songList.add(new Song(R.raw.nameofthegame, "Name of the Game", "", 20000));
-        songList.add(new Song(R.raw.ourlastsummer, "Our Last Summer", "", 20000));
-        songList.add(new Song(R.raw.ringring, "Ring Ring", "", 20000));
-        songList.add(new Song(R.raw.sos, "S.O.S.", "", 20000));
-        songList.add(new Song(R.raw.supertrouper, "Super Trouper", "", 20000));
-        songList.add(new Song(R.raw.takeachanceonme, "Take a Chance On Me", "", 20000));
-        songList.add(new Song(R.raw.thewinnertakesitall, "The Winner Takes It All", "", 20000));
-        songList.add(new Song(R.raw.voulezvouz, "Voulez Vouz", "", 20000));
-        songList.add(new Song(R.raw.waterloo, "Waterloo", "", 20000));
-        */
     }
 
     @Override

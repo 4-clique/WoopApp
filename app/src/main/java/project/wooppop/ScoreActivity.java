@@ -49,7 +49,7 @@ public class ScoreActivity extends ActionBarActivity {
         final ImageButton playAgainButton = (ImageButton) findViewById(R.id.playagain);
         playAgainButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent playAgain = new Intent(ScoreActivity.this, HomePage.class);
+                Intent playAgain = new Intent(ScoreActivity.this, CategoryActivity.class);
                 startActivity(playAgain);
                 finish();
             }
