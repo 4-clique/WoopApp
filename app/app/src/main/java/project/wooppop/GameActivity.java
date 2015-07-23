@@ -349,7 +349,7 @@ public class GameActivity extends ActionBarActivity implements MediaPlayerContro
             songList.add(new Song(R.raw.smbreakfree, "Break Free", "Ariana Grande, Zedd", 20000));
             songList.add(new Song(R.raw.smchandelier, "Chandelier", "Sia", 20000));
             songList.add(new Song(R.raw.smcoolkids, "Cool Kids", "Echosmith", 20000));
-            songList.add(new Song(R.raw.smflawless, "Flawless", "Beyonce", 20000));
+            songList.add(new Song(R.raw.smflawless, "Flawless", "Beyoncé", 20000));
             songList.add(new Song(R.raw.smheymama, "Hey Mama", "David Guetta, Nicki Minaj", 20000));
             songList.add(new Song(R.raw.smiwantyoutoknow, "I Want You To Know", "Selena Gomez, Zedd", 20000));
             songList.add(new Song(R.raw.smleanon, "Lean On", "Major Lazer, DJ Snake", 20000));
@@ -368,7 +368,7 @@ public class GameActivity extends ActionBarActivity implements MediaPlayerContro
             songList.add(new Song(R.raw.rvbreakfree, "Break Free", "Ariana Grande, Zedd", 20000));
             songList.add(new Song(R.raw.rvchandelier, "Chandelier", "Sia", 20000));
             songList.add(new Song(R.raw.rvcoolkids, "Cool Kids", "Echosmith", 20000));
-            songList.add(new Song(R.raw.rvflawless, "Flawless", "Beyonce", 20000));
+            songList.add(new Song(R.raw.rvflawless, "Flawless", "Beyoncé", 20000));
             songList.add(new Song(R.raw.rvheymama, "Hey Mama", "David Guetta, Nicki Minaj", 20000));
             songList.add(new Song(R.raw.rviwantyoutoknow, "I Want You To Know", "Selena Gomez, Zedd", 20000));
             songList.add(new Song(R.raw.rvleanon, "Lean On", "Major Lazer, DJ Snake", 20000));
@@ -387,7 +387,7 @@ public class GameActivity extends ActionBarActivity implements MediaPlayerContro
             songList.add(new Song(R.raw.rvbreakfree, "Break Free (Reversed)", "Ariana Grande, Zedd", 20000));
             songList.add(new Song(R.raw.rvchandelier, "Chandelier (Reversed)", "Sia", 20000));
             songList.add(new Song(R.raw.rvcoolkids, "Cool Kids (Reversed)", "Echosmith", 20000));
-            songList.add(new Song(R.raw.rvflawless, "Flawless (Reversed)", "Beyonce", 20000));
+            songList.add(new Song(R.raw.rvflawless, "Flawless (Reversed)", "Beyoncé", 20000));
             songList.add(new Song(R.raw.rvheymama, "Hey Mama (Reversed)", "David Guetta, Nicki Minaj", 20000));
             songList.add(new Song(R.raw.rviwantyoutoknow, "I Want You To Know (Reversed)", "Selena Gomez, Zedd", 20000));
             songList.add(new Song(R.raw.rvleanon, "Lean On (Reversed)", "Major Lazer, DJ Snake", 20000));
@@ -404,7 +404,11 @@ public class GameActivity extends ActionBarActivity implements MediaPlayerContro
             songList.add(new Song(R.raw.smbreakfree, "Break Free (Slow Motion)", "Ariana Grande, Zedd", 20000));
             songList.add(new Song(R.raw.smchandelier, "Chandelier (Slow Motion)", "Sia", 20000));
             songList.add(new Song(R.raw.smcoolkids, "Cool Kids (Slow Motion)", "Echosmith", 20000));
+<<<<<<< HEAD:app/app/src/main/java/project/wooppop/GameActivity.java
             songList.add(new Song(R.raw.smflawless, "Flawless (Slow Motion)", "Beyonce", 20000));
+=======
+            songList.add(new Song(R.raw.smflawless, "Flawless (Slow Motion)", "Beyoncé", 20000));
+>>>>>>> origin/master:app/src/main/java/project/wooppop/GameActivity.java
             songList.add(new Song(R.raw.smheymama, "Hey Mama (Slow Motion)", "David Guetta, Nicki Minaj", 20000));
             songList.add(new Song(R.raw.smiwantyoutoknow, "I Want You To Know (Slow Motion)", "Selena Gomez, Zedd", 20000));
             songList.add(new Song(R.raw.smleanon, "Lean On (Slow Motion)", "Major Lazer, DJ Snake", 20000));
